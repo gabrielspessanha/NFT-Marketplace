@@ -1,10 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/header-home/header.jsx'
+
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello world</h1>
-      </div>
+      <Header/>
+
     </>
   )
 }
