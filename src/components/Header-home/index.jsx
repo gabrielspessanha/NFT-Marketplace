@@ -8,8 +8,11 @@ export default function Header() {
   return (
     <header>
       <Navbar data-bs-theme="dark" bg='transparent' expand="xl" className='header-home'>
-        <div className='container-fluid container'>
-          <Navbar.Brand href="#home">NFT marketplace</Navbar.Brand>
+        <Container className='container-fluid container'>
+            <Navbar.Brand href="#home"><img src='../../public/marketplace.png' alt='logo-marketplace' style={{
+              width: "30px",
+              marginRight: '10px'
+            }}/>NFT marketplace</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className='my-2'/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -19,7 +22,7 @@ export default function Header() {
               <Nav.Link href="#link">Sign Up</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </div>
+        </Container>
       </Navbar>
     </header>
   )

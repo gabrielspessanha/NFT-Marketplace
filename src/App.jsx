@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header-home/header.jsx'
+import Header from './components/Header-home';
 
 
 function App() {
