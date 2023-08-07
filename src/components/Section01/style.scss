@@ -1,38 +1,9 @@
-@import '../colors/colors.scss';
+
+
 
 .section01{
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  h1{
-    font-size: 2rem;
-  }
-
-
-  img{
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  button{
-    padding:1.2rem 9rem;
-    border-radius: 20px;
-    background-color: $primary-color;
-    color: #ffff;
-    transition: 0.3s;
-
-    &:hover{
-      padding:1.1rem 8rem;
-    }
-  }
-
-  .numbers{
-    display: flex;
-    justifyContent: center;
-    alignItems: center;
-    gap: 2rem;
-    padding: 2rem;
-
-  }
+  min-height: 100vh;
 }

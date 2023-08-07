@@ -1,0 +1,18 @@
+@import '../../colors/colors.scss';
+
+
+.getStart{
+  padding:1.2rem 9rem;
+  border-radius: 20px;
+  background: $primary-color;
+  color: #ffff;
+  transition: 0.3s;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  font-family: 'work-sans', sans-serif;
+
+  &:hover{
+    padding:1.1rem 8rem;
+  }
+}

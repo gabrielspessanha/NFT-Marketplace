@@ -1,20 +1,22 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import './style.scss'
 import logo from '../../assets/marketplace.png'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import './styles.scss'
+
 
 export default function Header() {
   return (
     <header>
       <Navbar data-bs-theme="dark" bg='transparent' expand="xl" className='header-home'>
         <Container className='container-fluid container'>
-            <Navbar.Brand href="#home"><img src={logo} alt='logo-marketplace' style={{
-              width: "30px",
-              marginRight: '10px'
-            }}/>NFT marketplace</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" className='my-2'/>
-          <Navbar.Collapse id="basic-navbar-nav">
+        <div className='logo-header'>
+         <img src={logo} />
+         <Navbar.Brand href="#home" className='navBrand '>
+              NFT marketplace</Navbar.Brand>
+        </div>
+          <Navbar.Toggle aria-controls="basic-navbar-nav " />
+          <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="me-auto">
               <Nav.Link href="#home">Marketplace</Nav.Link>
               <Nav.Link href="#link">Rankings</Nav.Link>
