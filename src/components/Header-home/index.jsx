@@ -1,15 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './header.scss'
-
+import './style.scss'
+import logo from '../../assets/marketplace.png'
 
 export default function Header() {
   return (
     <header>
       <Navbar data-bs-theme="dark" bg='transparent' expand="xl" className='header-home'>
         <Container className='container-fluid container'>
-            <Navbar.Brand href="#home"><img src='../../public/marketplace.png' alt='logo-marketplace' style={{
+            <Navbar.Brand href="#home"><img src={logo} alt='logo-marketplace' style={{
               width: "30px",
               marginRight: '10px'
             }}/>NFT marketplace</Navbar.Brand>
