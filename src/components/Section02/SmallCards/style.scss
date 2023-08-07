@@ -1,0 +1,14 @@
+@import '../../colors/colors.scss';
+
+.miniCards{
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  
+  div{
+    transition: 0.3s;
+  }
+  div:hover{
+    transform: scale(0.9);
+   }
+}

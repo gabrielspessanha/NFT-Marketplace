@@ -20,7 +20,7 @@ export default function Header() {
               NFT marketplace
             </Navbar.Brand>
           </div>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" className="my-4" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="mb-1" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Marketplace</Nav.Link>

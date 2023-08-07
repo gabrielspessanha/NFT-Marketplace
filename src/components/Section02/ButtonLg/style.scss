@@ -1,0 +1,16 @@
+@import '../../colors/colors.scss';
+
+
+.btn-1025Section02{
+  width: 95px;
+  height: 95px;
+  border-radius: 20px;
+  background: $primary-color;
+  color: #ffff;
+  transition: 0.3s;
+  font-family: 'work-sans', sans-serif;
+
+  &:hover{
+    transform: scale(0.9);
+   }
+}
