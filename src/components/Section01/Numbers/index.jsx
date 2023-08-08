@@ -2,7 +2,7 @@ import './style.scss'
 
 export default function Numbers(){
   return (
-    <div className='numbers'>
+    <div className='numbers-section1'>
         <div>
           <h2>240k+</h2>
           <span>Venda total</span>

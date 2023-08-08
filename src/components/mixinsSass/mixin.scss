@@ -1,0 +1,7 @@
+@mixin alingment($display, $flex-direction, $place-content, $aling-item, $gap){
+  display: $display;
+  flex-direction: $flex-direction;
+  place-content: $place-content;
+  align-items: $aling-item;
+  gap: $gap;
+}

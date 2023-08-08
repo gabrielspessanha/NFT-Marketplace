@@ -11,8 +11,7 @@ export default function SmallCards(props){
       <div>
         <img src={props.miniImgCard02} />
       </div>
-      
       <ButtonLg>1025+</ButtonLg>
     </div>
   )
-} 
+}

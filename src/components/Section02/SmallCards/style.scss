@@ -1,11 +1,19 @@
 @import '../../colors/colors.scss';
 
 .miniCards{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-self: center;
+  grid-template-rows: auto;
+  margin-bottom: 15px;
 
   div{
     transition: 0.3s;
+
+    img{
+      width: 100px;
+      height: 100%;
+    }
   }
   div:hover{
     transform: scale(0.9);

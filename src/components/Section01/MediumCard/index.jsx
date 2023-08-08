@@ -1,5 +1,6 @@
-import './style.css'
-
 export default function MediumCard(props){
-  return (<img className='heroImg-section01' src={props.Heroimg} />)
+  return (<img style={{
+    maxWidth: "100%",
+    marginBottom: "2rem"
+  }} className='heroImg-section01' src={props.Heroimg} />)
 }

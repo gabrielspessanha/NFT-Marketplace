@@ -2,8 +2,8 @@
 
 
 .btn-1025Section02{
-  width: 95px;
-  height: 95px;
+  height: 100%;
+  border: none;
   border-radius: 20px;
   background: $primary-color;
   color: #ffff;
@@ -13,4 +13,4 @@
   &:hover{
     transform: scale(0.9);
    }
-}
+} 
