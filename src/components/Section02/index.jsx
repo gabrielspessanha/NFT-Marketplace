@@ -30,6 +30,7 @@ export default function Section02() {
         paragraph={"DSGN Animals"}
         Avatar={Avatar01}
         nick={"MrFox"}
+        textButton={"1025+"}
         />
 
       <Card
@@ -39,6 +40,7 @@ export default function Section02() {
         paragraph={"DSGN Animals"}
         Avatar={Avatar02}
         nick={"Shroomie"}
+        textButton={"6+"}
         />
         
     </div>

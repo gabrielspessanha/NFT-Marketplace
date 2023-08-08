@@ -2,13 +2,14 @@
 
 
 .btn-1025Section02{
+  font-size: 1.2rem;
   height: 100%;
   border: none;
   border-radius: 20px;
   background: $primary-color;
   color: #ffff;
   transition: 0.3s;
-  font-family: 'work-sans', sans-serif;
+  font-family: 'spaceMono', sans-serif;
 
   &:hover{
     transform: scale(0.9);
