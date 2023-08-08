@@ -2,9 +2,8 @@
 
 .miniCards{
   display: flex;
-  flex-direction: row;
-  border-radius: 20px;
-  
+  justify-content: center;
+
   div{
     transition: 0.3s;
   }

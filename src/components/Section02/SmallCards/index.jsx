@@ -15,4 +15,4 @@ export default function SmallCards(props){
       <ButtonLg>1025+</ButtonLg>
     </div>
   )
-}
+} 

@@ -2,7 +2,6 @@ import logo from "../../assets/marketplace.png";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import "./styles.scss";
 
 export default function Header() {
   return (
@@ -15,7 +14,10 @@ export default function Header() {
       >
         <Container className="container-fluid container">
           <div className="logo-header">
-            <img src={logo} />
+            <img style={{
+              width: "2rem",
+              paddingRight: "5px"
+            }} src={logo} />
             <Navbar.Brand href="#home" className="navBrand">
               NFT marketplace
             </Navbar.Brand>

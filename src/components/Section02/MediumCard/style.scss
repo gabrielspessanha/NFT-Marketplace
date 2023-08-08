@@ -1,0 +1,9 @@
+.heroImg-section02{
+  max-width: 100%;
+  margin-bottom: 2rem;
+  transition: .3s;
+
+  &:hover{
+    transform: scale(.975);
+  }
+}
