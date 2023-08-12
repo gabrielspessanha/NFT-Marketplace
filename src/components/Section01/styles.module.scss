@@ -28,10 +28,13 @@
 
   /* --------- Números principais-----------*/
   .numbersSection01{
-    font-size: 1rem;
-    font-family: 'spaceMono', sans-serif;
-    @include alingment(flex, row, center, center, 0.8rem);
     
+    width: 300px;
+    font-size: 1rem;
+    @include alingment(flex, row, space-between, center, 0.8rem);
+    h2{
+      font-family: 'spaceMono', sans-serif;
+    }
   }
 
 }
@@ -39,6 +42,7 @@
 
 @media(min-width: 800px){
   .section01{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -55,8 +59,19 @@
     grid-area: mediumCard;
     
    }
+   .buttonLgSection01{
+    width: 224px;
+   }
    .numbersSection01{
     grid-area: numbersSection;
+    @include alingment(flex, row, space-between, center, 1rem);
+    h2{
+      font-size: 1.4rem;
+    }
+    span{
+      font-size: 1rem;
+
+    }
    }
 
   }
