@@ -16,7 +16,7 @@ export default function Section01() {
         titleH1="Descubra arte digital e colecionar NFTs"
         titleP="compre e venda arte de mais de 20 mil artistas de NFTs."
       />
-      <MediumCard Heroimg={Heroimg}/>
+      <MediumCard classMediumCard={styles.mediumCard} Heroimg={Heroimg}/>
       <ButtonLg className={styles.buttonLgSection01}>
         <RocketTakeoff className="me-2 bg-transparent" size={20} />
         Iniciar

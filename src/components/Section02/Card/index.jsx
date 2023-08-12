@@ -4,7 +4,7 @@ import ButtonLg from '../ButtonLg'
 
 export default function Card(props){
   return (
-    <div className={`container-fluid card01-section02 pt-4 ${props.classCard} ${props.classActived}`}>
+    <div className={`${props.classCard} ${props.classActived}`}>
         <MediumCard className={props.classImgLg} Heroimg={props.Heroimg} />
         <SmallCards className={props.classImgSmall}
           miniImgCard01={props.SegundaryPhoto}

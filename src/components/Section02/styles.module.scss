@@ -20,11 +20,13 @@
   .card01{
     display: flex;
     flex-direction: column;
+    
   }
   
   /*-------Foto Grande ----*/
-  .heroImgLgSection02{
+  .heroImgLg{
     max-width: 100%;
+    height: 330px;
     margin-bottom: 1rem;
     transition: .3s;
   
@@ -32,45 +34,33 @@
       transform: scale(.975);
     }
   } 
-
-
+  /*-------imagens pequenas ----*/
+  .smallCardsSection02{
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 15px;
+    
+    div{
+      transition: 0.3s;
+    }
+    div:hover{
+      transform: scale(0.9);
+     }
+  }
+  
   /*-------estilos dos botões de numeros ----*/
   .buttonNumberSection02{
-    font-size: 1.2rem;
-    max-width: 6.5rem;
-    height: 100%;
+    font-size: 1.4rem;
     border: none;
     border-radius: 20px;
     background: $primary-color;
-    color: #ffff;
     transition: 0.3s;
     font-family: 'spaceMono', sans-serif;
 
     &:hover{
       transform: scale(0.9);
     }
-  }
-
-  .smallCardsSection02{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    align-self: center;
-    margin-bottom: 15px;
-    gap: 10px;
-    border: 2px solid blue;
-    
-    div{
-      transition: 0.3s;
-  
-      img{
-        width: 90px;
-        height: 90px;
-  
-      }
-    }
-    div:hover{
-      transform: scale(0.9);
-     }
   }
 
   
@@ -84,7 +74,7 @@
     grid-template-areas:
       "title title"
       "card01 card02";
-    
+    gap: 30px;
    .titleSection02{
     grid-area: title;
    }
@@ -94,10 +84,9 @@
    .card02{
     grid-area: card02;
     display: flex;
-    flex-direction: column;
    }
    .isActived{
-    display: block;
+    display: block; 
   }
     
   }

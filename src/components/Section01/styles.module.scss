@@ -1,10 +1,8 @@
 @import '../mixinsSass/mixin.scss';
 @import '../colors/colors.scss';
-@import '../mixinsSass/mixin.scss';
 
 .section01{
-  min-height: 100vh;
-  @include alingment(flex, column, null, center, null);
+  @include alingment(flex, column, null, center, 1rem);
 
   /* --------- Titulo principal-----------*/
   .titleSection01{
@@ -12,8 +10,6 @@
       font-size: 2rem;
     }
   }
-
-  
   /* --------- Botão principal de Iniciar-----------*/
   .buttonLgSection01{
     border: none;
@@ -32,13 +28,38 @@
 
   /* --------- Números principais-----------*/
   .numbersSection01{
-    margin-top: 1rem;
     font-size: 1rem;
     font-family: 'spaceMono', sans-serif;
     @include alingment(flex, row, center, center, 0.8rem);
     
   }
 
+}
+
+
+@media(min-width: 800px){
+  .section01{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title mediumCard"
+      "numbersSection mediumCard"
+      "button mediumCard";
+    gap: 30px;
+
+   .titleSection01{
+    grid-area: title;
+   }
+   .mediumCard{
+    grid-area: mediumCard;
+    
+   }
+   .numbersSection01{
+    grid-area: numbersSection;
+   }
+
+  }
 }
 
 

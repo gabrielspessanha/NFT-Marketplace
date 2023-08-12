@@ -26,7 +26,7 @@ export default function Section02() {
       <Card
         Avatar={Avatar01}
         classCard={styles.card01}
-        classImgLg={styles.heroImgLgSection02}
+        classImgLg={styles.heroImgLg}
         classButton={styles.buttonNumberSection02}
         classImgSmall={styles.smallCardsSection02}
         Heroimg={Heroimg01}
@@ -40,7 +40,7 @@ export default function Section02() {
       <Card
         Avatar={Avatar02}
         classCard={styles.card02}
-        classImgLg={styles.heroImgLgSection02}
+        classImgLg={styles.heroImgLg}
         classActived={styles.isActived}
         classButton={styles.buttonNumberSection02}
         classImgSmall={styles.smallCardsSection02}
