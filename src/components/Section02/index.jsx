@@ -14,32 +14,41 @@ import Avatar02 from "../../assets/section02/Avatar02.png"
 
 import Title from "../Title";
 import Card from "./Card";
-import "./style.scss";
+import styles from "./styles.module.scss";
 
 export default function Section02() {
   return (
-    <div className="container section02 ">
-      <Title
+    <div className={styles.section02}>
+      <Title className={styles.titleSection02}
           titleH1="Coleção de Tendências"
           titleP="Confira nossa coleção de tendências atualizada semanalmente."
         />
       <Card
-        Heroimg={Heroimg01}
-        SegundaryPhoto={SegundaryPhoto01}
-        ThirdPhoto={ThirdPhoto01} 
-        paragraph={"DSGN Animals"}
         Avatar={Avatar01}
+        classCard={styles.card01}
+        classImgLg={styles.heroImgLgSection02}
+        classButton={styles.buttonNumberSection02}
+        classImgSmall={styles.smallCardsSection02}
+        Heroimg={Heroimg01}
         nick={"MrFox"}
+        paragraph={"DSGN Animals"}
+        SegundaryPhoto={SegundaryPhoto01}
+        ThirdPhoto={ThirdPhoto01}
         textButton={"1025+"}
         />
 
       <Card
+        Avatar={Avatar02}
+        classCard={styles.card02}
+        classImgLg={styles.heroImgLgSection02}
+        classActived={styles.isActived}
+        classButton={styles.buttonNumberSection02}
+        classImgSmall={styles.smallCardsSection02}
         Heroimg={Heroimg02}
+        nick={"Shroomie"}
+        paragraph={"DSGN Animals"}
         SegundaryPhoto={SegundaryPhoto02}
         ThirdPhoto={ThirdPhoto02}
-        paragraph={"DSGN Animals"}
-        Avatar={Avatar02}
-        nick={"Shroomie"}
         textButton={"6+"}
         />
         

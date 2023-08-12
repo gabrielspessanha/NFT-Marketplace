@@ -1,10 +1,6 @@
-import ButtonLg from '../ButtonLg'
-import './style.scss'
-
-
 export default function SmallCards(props){
   return(
-    <div className="miniCards">
+    <div className={props.className}>
       <div>
         <img src={props.miniImgCard01} />
       </div>

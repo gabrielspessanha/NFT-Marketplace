@@ -1,9 +1,8 @@
-import './style.scss';
 
 export default function ButtonLg(props){
   return (
-    <button className='ButtonLg-section1'>
+    <button className={props.className}>
       {props.children}
-      </button>
+    </button>
   )
 }

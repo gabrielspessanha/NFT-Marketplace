@@ -1,8 +1,6 @@
-import './style.scss'
-
-export default function Numbers(){
+export default function Numbers(props){
   return (
-    <div className='numbers-section1'>
+    <div className={props.className}>
         <div>
           <h2>240k+</h2>
           <span>Venda total</span>

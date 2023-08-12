@@ -1,5 +1,3 @@
-import './style.scss'
-
 export default function MediumCard(props){
-  return (<img className='heroImg-section02' src={props.Heroimg} />)
+  return (<img className={props.className} src={props.Heroimg} />)
 }

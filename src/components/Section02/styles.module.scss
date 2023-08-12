@@ -1,0 +1,104 @@
+@import '../colors/colors.scss';
+
+.section02{
+  display: flex;
+  flex-direction: column;
+
+  /* --- Titulo principal ----*/
+  .titleSection02{
+    h1{
+      font-size: 2rem;
+    }
+  }
+
+  /* --- Cards desativados em determinados tamanhos de media ----*/
+  .isActived{
+    display: none;
+  }
+
+  /* ------- Card 01 ----------*/
+  .card01{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*-------Foto Grande ----*/
+  .heroImgLgSection02{
+    max-width: 100%;
+    margin-bottom: 1rem;
+    transition: .3s;
+  
+    &:hover{
+      transform: scale(.975);
+    }
+  } 
+
+
+  /*-------estilos dos botões de numeros ----*/
+  .buttonNumberSection02{
+    font-size: 1.2rem;
+    max-width: 6.5rem;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background: $primary-color;
+    color: #ffff;
+    transition: 0.3s;
+    font-family: 'spaceMono', sans-serif;
+
+    &:hover{
+      transform: scale(0.9);
+    }
+  }
+
+  .smallCardsSection02{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-self: center;
+    margin-bottom: 15px;
+    gap: 10px;
+    border: 2px solid blue;
+    
+    div{
+      transition: 0.3s;
+  
+      img{
+        width: 90px;
+        height: 90px;
+  
+      }
+    }
+    div:hover{
+      transform: scale(0.9);
+     }
+  }
+
+  
+}
+
+@media(min-width: 800px){
+  .section02{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title"
+      "card01 card02";
+    
+   .titleSection02{
+    grid-area: title;
+   }
+   .card01{
+    grid-area: card01;
+   }
+   .card02{
+    grid-area: card02;
+    display: flex;
+    flex-direction: column;
+   }
+   .isActived{
+    display: block;
+  }
+    
+  }
+}

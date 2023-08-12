@@ -1,0 +1,112 @@
+@import '../mixinsSass/mixin.scss';
+@import '../colors/colors.scss';
+@import '../mixinsSass/mixin.scss';
+
+.section01{
+  min-height: 100vh;
+  @include alingment(flex, column, null, center, null);
+
+  /* --------- Titulo principal-----------*/
+  .titleSection01{
+    h1{
+      font-size: 2rem;
+    }
+  }
+
+  
+  /* --------- Botão principal de Iniciar-----------*/
+  .buttonLgSection01{
+    border: none;
+    border-radius: 20px;
+    background: $primary-color;
+    font-family: 'work-sans', sans-serif;
+    height: 60px;
+    @include alingment(flex, row, center, center, 2px);
+    transition: 0.3s;
+    width: 315px;
+
+    &:hover{
+      transform: scale(0.9);
+    }
+  }
+
+  /* --------- Números principais-----------*/
+  .numbersSection01{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'spaceMono', sans-serif;
+    @include alingment(flex, row, center, center, 0.8rem);
+    
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 800px){
+  .section01{
+    min-height: 381px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title mediumCard"
+      "buttonLg mediumCard"
+      "numbersSection mediumCard";
+    gap: 10px 10px;
+    .title{
+      grid-area: title;
+      h1{
+        font-weight:bold;
+      }
+      
+    }
+    .heroImg-section01{
+      grid-area: mediumCard;
+    }
+    .ButtonLg-section1{
+      padding: 8px 50px;
+      grid-area: buttonLg;
+    }
+    .numbers-section1{
+      grid-area: numbersSection;
+    }
+  }
+}

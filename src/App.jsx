@@ -6,9 +6,11 @@ import Section02 from './components/Section02';
 function App() {
   return (
     <>
-      <Header/>
-      <Section01/>
+    <div className='container app'>
+      <Header />
+      <Section01 />
       <Section02 />
+    </div>
     </>
   )
 }
