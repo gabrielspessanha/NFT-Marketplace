@@ -8,6 +8,7 @@
   .titleSection01{
     h1{
       font-size: 2rem;
+      
     }
   }
   /* --------- Botão principal de Iniciar-----------*/
@@ -50,7 +51,7 @@
       "title mediumCard"
       "numbersSection mediumCard"
       "button mediumCard";
-    gap: 30px;
+   
 
    .titleSection01{
     grid-area: title;
@@ -64,7 +65,6 @@
    }
    .numbersSection01{
     grid-area: numbersSection;
-    @include alingment(flex, row, space-between, center, 1rem);
     h2{
       font-size: 1.4rem;
     }
@@ -76,6 +76,36 @@
 
   }
 }
+
+@media(min-width: 1000px){
+  .section01{
+   .titleSection01{
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 1.4rem;
+    }
+   }
+
+   .buttonLgSection01{
+    width: 270px;
+   }
+   .numbersSection01{
+    width: 100%;
+    @include alingment(flex, row, space-between, center, 1rem);
+    h2{
+      font-size: 1.7rem;
+    }
+    span{
+      font-size: 1.4rem;
+
+    }
+   }
+
+  }
+}
+
 
 
 

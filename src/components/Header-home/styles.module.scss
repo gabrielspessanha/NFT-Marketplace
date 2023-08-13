@@ -1,0 +1,19 @@
+@import '../colors/colors.scss';
+
+
+.header01{
+  @media(min-width: 1200px){
+    .navItems{
+      text-align: center;
+
+      .singUp{
+        background-color: $primary-color;
+        border-radius: 10px;
+        width: 152px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+} 
