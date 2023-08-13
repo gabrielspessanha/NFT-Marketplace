@@ -3,6 +3,7 @@
 .section02{
   display: flex;
   flex-direction: column;
+  place-items: center;
 
   /* --- Titulo principal ----*/
   .titleSection02{
@@ -20,6 +21,7 @@
   .card01{
     display: flex;
     flex-direction: column;
+    max-width: 330px;
     
   }
   
@@ -80,9 +82,11 @@
    }
    .card01{
     grid-area: card01;
+    
    }
    .card02{
     grid-area: card02;
+    max-width: 330px;
     display: flex;
    }
    .isActived{
