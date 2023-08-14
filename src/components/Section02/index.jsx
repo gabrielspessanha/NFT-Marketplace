@@ -12,10 +12,10 @@ import ThirdPhoto02 from "../../assets/section02/third02Photo.png"
 import Avatar02 from "../../assets/section02/Avatar02.png"
 
 /* ------------imagens do Card 3---------------- */
-import Heroimg03 from "../../assets/section03/primaryPhoto03.png";
-import SegundaryPhoto03 from "../../assets/section03/secondPhoto03.png"
-import ThirdPhoto03 from "../../assets/section03/thirdPhoto03.png"
-import Avatar03 from "../../assets/section03/avatar03.png"
+import Heroimg03 from "../../assets/section02/section0203/primaryPhoto03.png";
+import SegundaryPhoto03 from "../../assets/section02/section0203/secondPhoto03.png"
+import ThirdPhoto03 from "../../assets/section02/section0203/thirdPhoto03.png"
+import Avatar03 from "../../assets/section02/section0203/avatar03.png"
 
 
 
