@@ -87,11 +87,34 @@
    .card02{
     grid-area: card02;
     max-width: 330px;
-    display: flex;
-   }
-   .isActived{
-    display: block; 
+    display: block;
+   } 
   }
-    
+}
+
+@media(min-width: 1200px){
+  .section02{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title title"
+      "card01 card02 card03";
+    gap: 30px;
+   .titleSection02{
+    grid-area: title;
+   }
+   .card01{
+    grid-area: card01;
+   }
+   .card02{
+    grid-area: card02;
+    max-width: 330px;
+    display: block;
+   }
+   .card03{
+    grid-area: card03;
+    display: block
+   }
   }
 }

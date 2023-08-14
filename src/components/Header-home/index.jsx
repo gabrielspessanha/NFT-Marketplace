@@ -2,8 +2,9 @@ import logo from "../../assets/marketplace.png";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
+import ButtonLg from './ButtonLg';
 import styles from "./styles.module.scss"
+import { Person } from "react-bootstrap-icons";
 
 export default function Header() {
   return (
@@ -14,7 +15,7 @@ export default function Header() {
         expand="xl"
         className="header-home"
       >
-        <Container className="container-fluid">
+        <Container className="justify-content-between">
           <div className="logo-header">
             <img style={{
               width: "2rem",
@@ -25,16 +26,19 @@ export default function Header() {
             </Navbar.Brand>
           </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="mb-1" />
-          <Navbar.Collapse id="basic-navbar-nav" className={`${styles.navItems}`}>
-            <Nav className={`me-auto`}>
-              <Nav.Link href="#home">Marketplace</Nav.Link>
-              <Nav.Link href="#link">Rankings</Nav.Link>
-              <Nav.Link href="#link">Connect a wallet</Nav.Link>
-              <Nav.Link href="#link" className={styles.singUp}>Sign Up</Nav.Link>
-            </Nav>
+          <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-end ${styles.navItems}`}>
+              <Nav.Link className={styles.itemsNavLink} href="#home">Marketplace</Nav.Link>
+              <Nav.Link className={styles.itemsNavLink} href="#link">Rankings</Nav.Link>
+              <Nav.Link className={styles.itemsNavLink} href="#link">Connect a wallet</Nav.Link>
+              <ButtonLg className={styles.buttonLgHeader01}>
+                <Person className={`me-2 bg-transparent ${styles.iconHeader}`} size={20} />
+                {"Sign Up"}
+              </ButtonLg>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      
     </header>
   );
 }

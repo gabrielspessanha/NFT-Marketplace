@@ -1,6 +1,6 @@
 import MediumCard from "../MediumCard";
 import SmallCards from "../SmallCards";
-import ButtonLg from '../ButtonLg'
+import ButtonLg from '../ButtonLg';
 
 export default function Card(props){
   return (

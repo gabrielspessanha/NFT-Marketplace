@@ -11,6 +11,13 @@ import SegundaryPhoto02 from "../../assets/section02/secondPhoto02.png"
 import ThirdPhoto02 from "../../assets/section02/third02Photo.png"
 import Avatar02 from "../../assets/section02/Avatar02.png"
 
+/* ------------imagens do Card 3---------------- */
+import Heroimg03 from "../../assets/section03/primaryPhoto03.png";
+import SegundaryPhoto03 from "../../assets/section03/secondPhoto03.png"
+import ThirdPhoto03 from "../../assets/section03/thirdPhoto03.png"
+import Avatar03 from "../../assets/section03/avatar03.png"
+
+
 
 import Title from "../Title";
 import Card from "./Card";
@@ -51,7 +58,22 @@ export default function Section02() {
         ThirdPhoto={ThirdPhoto02}
         textButton={"6+"}
         />
+
+      <Card
+        Avatar={Avatar03}
+        classCard={styles.card03}
+        classImgLg={styles.heroImgLg}
+        classActived={styles.isActived}
+        classButton={styles.buttonNumberSection02}
+        classImgSmall={styles.smallCardsSection02}
+        Heroimg={Heroimg03}
+        nick={"Gabiru2robots"}
+        paragraph={"Disco Machines"}
+        SegundaryPhoto={SegundaryPhoto03}
+        ThirdPhoto={ThirdPhoto03}
+        textButton={"1025+"}
+        />
         
-    </div>
+    </div> 
   );
 }

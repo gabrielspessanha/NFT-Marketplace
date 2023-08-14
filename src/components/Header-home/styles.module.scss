@@ -1,18 +1,46 @@
 @import '../colors/colors.scss';
+@import '../mixinsSass/mixin.scss';
+
 
 
 .header01{
+  font-size: 1.2rem;
+  .buttonLgHeader01{
+    border: none;
+    border-radius: 20px;
+  }
+  .iconHeader{
+    display: none;
+  }
+
   @media(min-width: 1200px){
     .navItems{
-      text-align: center;
+      display: flex;
+      gap: 20px;
 
-      .singUp{
-        background-color: $primary-color;
-        border-radius: 10px;
-        width: 152px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .itemsNavLink{
+        transition: .3s;
+        &:hover{
+          transform: scale(0.9);
+        }
+      }
+      
+    }
+    .iconHeader{
+      display: inline;
+    }
+
+    .buttonLgHeader01{
+      background: $primary-color;
+      font-family: 'work-sans', sans-serif;
+      height: 60px;
+      @include alingment(flex, row, center, center, 2px);
+      transition: 0.3s;
+      width: 152px;
+      font-weight: 500;
+  
+      &:hover{
+        transform: scale(0.9);
       }
     }
   }
