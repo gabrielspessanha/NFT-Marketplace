@@ -2,6 +2,8 @@ import Title from "../Title"
 import Creators from "./creators"
 import styles from "./styles.module.scss"
 
+import { RocketTakeoff } from "react-bootstrap-icons";
+
 import avatar01 from "../../assets/section03/avatars_section03/avatar01.png"
 import avatar02 from "../../assets/section03/avatars_section03/avatar02.png"
 import avatar03 from "../../assets/section03/avatars_section03/avatar03.png"
@@ -14,12 +16,13 @@ import avatar09 from "../../assets/section03/avatars_section03/avatar09.png"
 import avatar10 from "../../assets/section03/avatars_section03/avatar10.png"
 import avatar11 from "../../assets/section03/avatars_section03/avatar11.png"
 import avatar12 from "../../assets/section03/avatars_section03/avatar12.png"
+import Button from 'react-bootstrap/Button';
 
 
 export default function Section03(){
   return(
     <div className={styles.section03}>
-      <Title className={styles.titleSection02}
+      <Title className={styles.titleSection03}
         titleH1="Top Criadores"
         titleP="Confira os criadores com melhor classificação no mercado NFT"/>
       <div className={styles.creators}>
@@ -137,8 +140,14 @@ export default function Section03(){
           position={"12"}
           numberSales={"16.84"}
         />
-         
       </div>
+      <div className={styles.buttonRankings}>
+        <Button className={`${styles.buttonLg} mt-4`} href="#">
+          <RocketTakeoff className="me-2 bg-transparent rocket" size={20} />
+          Visualizar rankings
+        </Button>
+      </div>
+      
     </div>
   )
 }
