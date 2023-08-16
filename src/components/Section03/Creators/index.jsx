@@ -1,8 +1,3 @@
-
-
-
-
-
 export default function Creators(props){
   return (
     <div className={`${props.className} ${props.isActived}`}>

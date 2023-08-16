@@ -1,5 +1,5 @@
 import Title from "../Title"
-import Creators from "./creators"
+import Creators from "./Creators"
 import styles from "./styles.module.scss"
 
 import { RocketTakeoff } from "react-bootstrap-icons";
