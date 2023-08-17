@@ -144,7 +144,7 @@ export default function Section03(){
       <div className={styles.buttonRankings}>
         <Button className={`${styles.buttonLg} mt-4`} href="#">
           <RocketTakeoff className="me-2 bg-transparent rocket" size={20} />
-          Visualizar rankings
+          Visualizar mais
         </Button>
       </div>
       
