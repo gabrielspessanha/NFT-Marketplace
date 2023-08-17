@@ -1,20 +1,28 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 export default function Numbers(props){
   return (
     <div className={props.className}>
-        <div>
-          <h2>240k+</h2>
-          <span>Venda total</span>
-        </div>
+        <Row>
+          <Col>
+            <h5>240k+</h5>
+            <span>Vendas</span>
+          </Col>
+          
+          <Col>
+            <h5>100k+</h5>
+            <span>Leilões</span>
+          </Col>
 
-        <div>
-          <h2>100k+</h2>
-          <span>Leilões</span>
-        </div>
+          <Col>
+            <h5>50k+</h5>
+            <span>Artistas</span>
+          </Col>
 
-        <div>
-          <h2>240k+</h2>
-          <span>Artists</span>
-        </div>
+        </Row>
         
       </div>
   )

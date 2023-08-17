@@ -16,7 +16,7 @@ import avatar09 from "../../assets/section03/avatars_section03/avatar09.png"
 import avatar10 from "../../assets/section03/avatars_section03/avatar10.png"
 import avatar11 from "../../assets/section03/avatars_section03/avatar11.png"
 import avatar12 from "../../assets/section03/avatars_section03/avatar12.png"
-import Button from 'react-bootstrap/Button';
+import ButtonLg from "../ButtonLg";
 
 
 export default function Section03(){
@@ -142,11 +142,12 @@ export default function Section03(){
         />
       </div>
       <div className={styles.buttonRankings}>
-        <Button className={`${styles.buttonLg} mt-4`} href="#">
+        <ButtonLg className={`${styles.buttonLg} mt-4`} link={""}>
           <RocketTakeoff className="me-2 bg-transparent rocket" size={20} />
           Visualizar mais
-        </Button>
+        </ButtonLg>
       </div>
+      
       
     </div>
   )

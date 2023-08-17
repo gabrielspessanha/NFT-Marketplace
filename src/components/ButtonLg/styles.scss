@@ -1,0 +1,17 @@
+@import "../colors/colors.scss";
+
+.buttonLgStandard{
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: transparent;
+  border:2px solid $primary-color;
+  transition: .3s;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+  &:hover{
+    background: $primary-color;
+    transform: scale(.93);
+    border:2px solid $primary-color;
+  }
+}

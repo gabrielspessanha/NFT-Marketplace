@@ -3,8 +3,10 @@ import { RocketTakeoff } from "react-bootstrap-icons";
 import MediumCard from "./MediumCard";
 import Numbers from "./Numbers";
 import Title from "../Title";
-import Button from 'react-bootstrap/Button';
+import ButtonLg from "../ButtonLg";
 import styles from "./styles.module.scss";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -17,10 +19,10 @@ export default function Section01() {
       />
       <MediumCard classMediumCard={styles.mediumCard} Heroimg={Heroimg}/>
       <div className={styles.buttonGetstart}>
-        <Button className={`${styles.buttonLg}`} href="#">
+        <ButtonLg className={styles.buttonLg} link={"#"}>
           <RocketTakeoff className="me-2 bg-transparent rocket" size={20} />
           Iniciar
-        </Button>
+        </ButtonLg>
       </div>
       <Numbers className={styles.numbersSection01} />
     </div>

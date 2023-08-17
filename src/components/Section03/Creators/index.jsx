@@ -1,6 +1,7 @@
+import "./styles.scss"
 export default function Creators(props){
   return (
-    <div className={`${props.className} ${props.isActived}`}>
+    <div className={`${props.className} ${props.isActived} creators_Item`}>
       <p className={props.positionClass}>{props.position}</p>
       <img src={props.src} alt={`perfil-${props.name}`}/>
       <div className={props.texts}>

@@ -1,0 +1,19 @@
+@import "../../colors/colors.scss";
+.creators_Item{
+  background-color: $background-color-secundary;
+  border-radius: 20px;
+  width: 315px;
+  height: 100px;
+  margin: 20px 10px;
+  padding: 1rem;
+  display: flex;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.527);
+  transition: .3s;
+  &>*{
+    background-color: transparent;
+  }
+  &:hover{
+    transform: scale(.93);
+  }
+  
+}

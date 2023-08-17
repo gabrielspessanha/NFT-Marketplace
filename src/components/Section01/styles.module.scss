@@ -1,6 +1,7 @@
 @import '../mixinsSass/mixin.scss';
 @import '../colors/colors.scss';
 
+
 .section01{
   @include alingment(flex, column, null, center,2rem);
 
@@ -12,70 +13,50 @@
       
     }
   }
-  /* --------- Botão principal de Iniciar-----------*/
-    .buttonLg{
-      padding: 1.25rem;
-      width: 315px;
-      border-radius: 20px;
-      background-color: transparent;
-      border:2px solid $primary-color;
-      transition: .3s;
-      font-weight: 500;
-      letter-spacing: 2px;
   
-      &:hover{
-        background-color: $primary-color;
-        transform: scale(.93);
-      }
-    } 
-
-
   /* --------- Números principais-----------*/
   .numbersSection01{
-    width: 300px;
-    font-size: 1rem;
-    @include alingment(flex, row, space-between, center, null);
-    h2{
+    h5{
       font-family: 'spaceMono', sans-serif;
     }
   }
-
 }
 
 
 @media(min-width: 800px){
   .section01{
     display: grid;
-    place-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
       "title mediumCard"
       "button mediumCard"
       "numbersSection mediumCard";
+
    .titleSection01{
     grid-area: title;
     
    }
    .mediumCard{
+    width: 100%;
     grid-area: mediumCard;
-    
-    
    }
+
    .buttonLg{
     width: 224px;
     grid-area: button;
-    
    }
+
    .numbersSection01{
     grid-area: numbersSection;
     
 
-    h2{
+    h5{
       font-size: 1.4rem;
     }
     span{
       font-size: 1rem;
+      color: $Segundary-color;
 
     }
    }
@@ -85,8 +66,10 @@
 
 @media(min-width: 1000px){
   .section01{
+
+    grid-template-rows: 1fr 2fr 1fr 2fr;
    .titleSection01{
-    h1{
+    h2{
       font-size: 3rem;
     }
     p{
