@@ -59,6 +59,7 @@
     border-radius: 20px;
     background: $primary-color;
     transition: 0.3s;
+    box-shadow: 2px 2px 2px black;
     font-family: 'spaceMono', sans-serif;
 
     &:hover{
@@ -80,7 +81,6 @@
    }
    .card01{
     grid-area: card01;
-    
    }
    .card02{
     grid-area: card02;
