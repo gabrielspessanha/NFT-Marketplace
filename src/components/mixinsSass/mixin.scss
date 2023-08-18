@@ -5,3 +5,10 @@
   align-items: $aling-item;
   gap: $gap;
 }
+
+@mixin gridTemplate($display,$templateColumns,$templateRow, $gap){
+  display: $display;
+  grid-template-columns: $templateColumns;
+  grid-template-rows: $templateRow;
+  gap: $gap;
+}
