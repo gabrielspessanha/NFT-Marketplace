@@ -5,8 +5,6 @@ import Numbers from "./Numbers";
 import Title from "../Title";
 import ButtonLg from "../ButtonLg";
 import styles from "./styles.module.scss";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
 

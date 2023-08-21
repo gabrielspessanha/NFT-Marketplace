@@ -2,16 +2,18 @@
 @import '../mixinsSass/mixin.scss';
 
 
-
 .header01{
+  padding: 0;
   font-size: 1.2rem;
-  .buttonLgHeader01{
-    border: none;
-    border-radius: 20px;
-  }
-  .iconHeader{
-    display: none;
-  }
+}
+
+.buttonLgHeader01{
+  border: none;
+  border-radius: 20px;
+}
+.iconHeader{
+  display: none;
+}
 
   @media(min-width: 1200px){
     .navItems{
@@ -36,7 +38,7 @@
       height: 60px;
       @include alingment(flex, row, center, center, 2px);
       transition: 0.3s;
-      width: 152px;
+      width: 144px;
       font-weight: 500;
   
       &:hover{
@@ -44,4 +46,3 @@
       }
     }
   }
-} 

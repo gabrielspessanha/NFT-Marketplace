@@ -8,14 +8,13 @@ import { Person } from "react-bootstrap-icons";
 
 export default function Header() {
   return (
-    <header className={styles.header01}>
       <Navbar
         data-bs-theme="dark"
         bg="transparent"
         expand="xl"
         className="header-home"
       >
-        <Container className="justify-content-between">
+        <Container className={styles.header01}>
           <div className="logo-header">
             <img style={{
               width: "2rem",
@@ -37,8 +36,5 @@ export default function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      
-    </header>
   );
 }
