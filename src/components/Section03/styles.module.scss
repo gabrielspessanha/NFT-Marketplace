@@ -1,5 +1,8 @@
 @import "../colors/colors.scss";
 
+
+
+
 .titleSection03{
   grid-area: title;
 }
@@ -49,7 +52,7 @@
 @media(min-width: 830px){
   .section03{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: 
       "title button"
       "creators creators"
