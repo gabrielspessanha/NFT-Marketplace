@@ -10,7 +10,6 @@
 .buttonRankings{
   display: flex;
   justify-content: center;
-  grid-area: button;
 
   .buttonLg{
     max-height: 70px;
@@ -52,7 +51,7 @@
 @media(min-width: 830px){
   .section03{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
       "title button"
       "creators creators"
@@ -62,6 +61,10 @@
 
 
 @media(min-width: 1200px){
+  .section03{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
   .creators{
     .creators_Item{
       width: 240px;
