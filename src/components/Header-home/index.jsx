@@ -2,7 +2,7 @@ import logo from "../../assets/marketplace.png";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import ButtonLg from './ButtonLg';
+import ButtonSmall from './ButtonSmall';
 import styles from "./styles.module.scss"
 import { Person } from "react-bootstrap-icons";
 
@@ -29,10 +29,10 @@ export default function Header() {
               <Nav.Link className={styles.itemsNavLink} href="#home">Marketplace</Nav.Link>
               <Nav.Link className={styles.itemsNavLink} href="#link">Rankings</Nav.Link>
               <Nav.Link className={styles.itemsNavLink} href="#link">Connect a wallet</Nav.Link>
-              <ButtonLg className={styles.buttonLgHeader01}>
+              <ButtonSmall className={styles.buttonHeader01}>
                 <Person className={`me-2 bg-transparent ${styles.iconHeader}`} size={20} />
                 {"Sign Up"}
-              </ButtonLg>
+              </ButtonSmall>
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -1,5 +1,5 @@
 
-export default function ButtonLg(props){
+export default function ButtonSmall(props){
   return (
     <button className={props.className}>
       {props.children}
